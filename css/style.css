@@ -3,3 +3,57 @@ body {
     margin: 0;
     padding: 0;
 }
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 60px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.all-recent {
+    margin-bottom: 1em;
+    display: grid;
+}
+
+.hero {
+    margin-top: 0;
+    background-image: url("/images/blog-image-hero.png") ;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: baseline;
+    margin-bottom: 2em;
+}
+
+.featured-blog {
+    color: white;
+    height: 50vh;
+    margin-bottom: 2em;
+}
+
+.blogs {
+    padding: 0 1.25em;
+}
+
+.view-more {
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 2em 0;
+}
