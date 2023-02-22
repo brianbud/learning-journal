@@ -2,6 +2,40 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+/* FONT STYLING */
+
+h1, h2, .view-more, .logo-title {
+    font-weight: 700;
+}
+
+.nav-title {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p, span {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.all-recent p {
+    color: #505050;
+}
+
+.all-recent h2 {
+    color: #141414;
 }
 
 ul {
@@ -11,10 +45,24 @@ ul {
     grid-template-rows: 60px;
     align-items: center;
     margin-bottom: 0;
+    padding: 1em;
 }
 
 li:hover {
     cursor: pointer;
+    text-decoration: underline;
+}
+
+/* LAYOUT */
+
+.logo-img {
+    width: 1.5em;
+}
+
+.logo-title {
+    display: flex;
+    gap: .5em;
+    align-items: center;
 }
 
 img {
@@ -27,18 +75,18 @@ img {
 }
 
 .hero {
-    margin-top: 0;
-    background-image: url("/images/blog-image-hero.png") ;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: baseline;
+    background: url("/images/blog-image-hero.png") no-repeat center;
+    margin-top: auto;
     margin-bottom: 2em;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 1em;
 }
 
 .featured-blog {
     color: white;
-    height: 50vh;
-    margin-bottom: 2em;
 }
 
 .blogs {
@@ -48,12 +96,42 @@ img {
 .view-more {
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 2.5em;
+    cursor: pointer;
 }
 
 footer {
     display: grid;
     justify-content: center;
+    text-align: center;
     color: white;
-    background-color: black;
+    background-color: #202020;
     padding: 2em 0;
+}
+
+.blog-info {
+    padding: .875em 0;
+}
+
+h1:hover , h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 768px) {
+
+    .hidden {
+        display: block;
+    }
+
+    .all-recent {
+        width: 70%;
+        margin: auto;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
 }
