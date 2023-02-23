@@ -1,5 +1,6 @@
 html, 
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -7,6 +8,11 @@ body {
 }
 
 /* FONT STYLING */
+
+a {
+    color: white;
+    text-decoration: none;
+}
 
 h1, h2, .view-more, .logo-title {
     font-weight: 700;
@@ -48,6 +54,10 @@ ul {
     padding: 1em;
 }
 
+ul a {
+    color:#090909;
+}
+
 li:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -85,8 +95,13 @@ img {
     padding: 0 1em;
 }
 
+.featured-full-blog {
+    color: red;
+}
+
 .featured-blog {
     color: white;
+    width: 100%;
 }
 
 .blogs {
@@ -133,5 +148,13 @@ h1:hover , h2:hover {
         width: 70%;
         margin: auto;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    .hero {
+        background: url("/images/blog-image-hero.png") center;
+    }
+
+    .featured-blog {
+        width: 70%;
     }
 }
