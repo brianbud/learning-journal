@@ -84,6 +84,10 @@ img {
     display: grid;
 }
 
+.all-recent >h2 {
+    text-align: center;
+}
+
 .hero {
     background: url("/images/blog-image-hero.png") no-repeat center;
     margin-top: auto;
@@ -95,12 +99,18 @@ img {
     padding: 0 1em;
 }
 
-.featured-full-blog {
-    color: red;
+#featured {
+    display: block;
+    background: none;
+    height: auto;
+}
+
+#featured  img {
+    background-size: center;
 }
 
 .featured-blog {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
 }
 
@@ -128,13 +138,12 @@ footer {
     padding: .875em 0;
 }
 
-h1:hover , h2:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .hidden {
     display: none;
+}
+
+.recent-post-title {
+    text-align: center;
 }
 
 /* Desktop Layout */
@@ -154,7 +163,13 @@ h1:hover , h2:hover {
         background: url("/images/blog-image-hero.png") center;
     }
 
+    #featured {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     .featured-blog {
         width: 70%;
     }
+
 }
