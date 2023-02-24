@@ -58,11 +58,6 @@ ul a {
     color:#090909;
 }
 
-li:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 /* LAYOUT */
 
 .logo-img {
@@ -146,6 +141,19 @@ footer {
     text-align: center;
 }
 
+.profile-pic {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.about-me-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
 /* Desktop Layout */
 @media only screen and (min-width: 768px) {
 
@@ -170,6 +178,12 @@ footer {
 
     .featured-blog {
         width: 70%;
+    }
+
+    .about-me-header {
+        display: flex;
+        align-items: center;
+        gap: 1em;
     }
 
 }
